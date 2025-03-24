@@ -5,6 +5,9 @@
 
 int _putchar(char c);
 int _printf(const char *format, ...);
+int printStr(va_list args);
+int printChar(va_list args);
+int printPercent(va_list args);
 
 typedef struct printForm{
 
