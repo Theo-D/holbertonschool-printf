@@ -1,6 +1,12 @@
 #include "main.h"
 /**
+ * getPrintFun - Call functions thanks to a function pointer according
+ * to given format specifier.
+ * @c: Format specifier.
+ * @args: Argument to call the function corresponding to format
+ * specifier.
  *
+ * Return: the number of printed characters.
  */
 int getPrintFun(char c, va_list args)
 {

@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+ * _printf - Prints data passed as args according to format by calling
+ * getPrintFun().
+ * @format: string containing the informations to print itself.
+ *
+ * Return: The count of characters printed.
+ */
 int _printf(const char *format, ...)
 {
 	va_list args;
@@ -10,7 +16,7 @@ int _printf(const char *format, ...)
 	if (format == NULL)
 		return (-1);
 
-	while(format[i])
+	while (format[i])
 	{
 		if (format[i] == '%' && format[i + 1] != '\0')
 		{
@@ -24,8 +30,6 @@ int _printf(const char *format, ...)
 		}
 		i++;
 	}
-
 	va_end(args);
-
 	return (sumChar);
 }
