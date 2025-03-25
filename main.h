@@ -10,10 +10,8 @@ int printChar(va_list args);
 int printPercent(va_list args);
 
 typedef struct printForm{
-
-	char formSpec;
-	void (*printX)(va_list args);
-
+	char formSpec[4];
+	void (*printFun)(va_list args);
 } printForm_t;
 
 #endif
