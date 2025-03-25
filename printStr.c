@@ -14,7 +14,7 @@ int printStr(va_list args)
 	while (string[strLen] != '\0')
 	{
 		_putchar(string[strLen]);
-		strLen ++
+		strLen ++;
 	}
 
 	return (strLen);

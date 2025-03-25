@@ -1,0 +1,21 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ *printChar - prints number of characters
+ *@args: arguments
+ *Return: Always 0
+char *intToStr = "" */
+int printChar(va_list args)
+{
+	char character = va_arg(args, int);
+	int sumChar = 0;
+	
+	if (character >= 32 && character <= 126)
+	{
+		 _putchar(character);
+		 sumChar = 1;
+	}
+			
+	return (sumChar);
+}

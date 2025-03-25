@@ -3,14 +3,7 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int i = 0, j, k;
-	int sumChar;
-	printForm_t printFormat = {
-		{{'d', 'i'}, printInt},
-		{{'s'}, printStr},
-		{{'c'}, printChar},
-		{{'%'}, printPercent}
-	};
+	int i = 0, sumChar = 0;
 
 	va_start(args, format);
 
@@ -19,27 +12,20 @@ int _printf(const char *format, ...)
 
 	while(format[i])
 	{
-		j = 0;
-
-		if (format[i] == '%' && format[i + 1] != 0)
+		if (format[i] == '%' && format[i + 1] != '\0')
 		{
-			while (printFormat.formSpec[j])
-			{
-				k = 0;
-				while (printFormat.formSpec[j][k]);
-				{
-					if (printFormat.formSpec[j][k] == format[i + 1])
-					{
-						/* Voir si la ligne ci dessous permet à la fois d'exécuter la fonction et
-						 * d'additioner sa valeur de retour.*/
-						sumChar += printformat.printFun[j];
-					}
-					k++;
-				}
-				j++;
-			}
+			i++;
+			sumChar += getPrintFun(format[i], args);
+		}
+		else
+		{
+			_putchar(format[i]);
+			sumChar += 1;
 		}
 		i++;
 	}
+
+	va_end(args);
+
 	return (sumChar);
 }
