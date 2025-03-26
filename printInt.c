@@ -12,11 +12,16 @@ int printInt(va_list args)
 	char intToStr[11];
 	int sumChar = 0;
 	unsigned short isNeg = 0;
+	unsigned int valAbs;
 
 	if (integer < 0)
 	{
-		integer *= -1;
-		isNeg = -1;
+		isNeg = 1;
+		valAbs = (unsigned int)(-integer);
+	}
+	else
+	{
+		valAbs = (unsigned int)integer;
 	}
 
 	if (integer == 0)
@@ -25,10 +30,10 @@ int printInt(va_list args)
 		return (1);
 	}
 
-	while (integer != 0)
+	while (valAbs != 0)
 	{
-		intToStr[i] = (integer % 10) + '0';
-		integer /= 10;
+		intToStr[i] = (valAbs % 10) + '0';
+		valAbs /= 10;
 		i++;
 		sumChar++;
 	}
