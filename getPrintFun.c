@@ -35,6 +35,9 @@ int getPrintFun(char c, va_list args)
 		_putchar(c);
 		return (1);
 	}
-	_putchar('%');
-	return (1);
+	else
+	{
+		_putchar('%');
+		return (1);
+	}
 }
