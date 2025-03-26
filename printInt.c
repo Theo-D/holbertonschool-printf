@@ -11,7 +11,7 @@ int printInt(va_list args)
 	int integer = va_arg(args, int);
 	char intToStr[11];
 	int sumChar = 0;
-	unsigned short isNeg = 0;
+	short isNeg = 0;
 
 	if (integer < 0)
 	{
