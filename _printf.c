@@ -25,11 +25,9 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i] == '%' && format[i + 1] == '\0')
 			return (sumChar += -1);
-		else
-		{
-			_putchar(format[i]);
-			sumChar += 1;
-		}
+
+		_putchar(format[i]);
+		sumChar += 1;
 		i++;
 	}
 	va_end(args);

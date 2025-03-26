@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *printInt - handles the conversion specifiers
- *args: arguments
- *Return: Always 0
+ * printInt - handles the conversion specifiers
+ * @args: arguments
+ * Return: Always 0
  */
 int printInt(va_list args)
 {
