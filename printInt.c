@@ -9,7 +9,7 @@ int printInt(va_list args)
 {
 	int i = 0;
 	int integer = va_arg(args, int);
-	char intToStr[];
+	char intToStr[11];
 	int sumChar = 0;
 	unsigned short isNeg = 0;
 
