@@ -10,7 +10,6 @@ int printBin(va_list args)
 	unsigned int uInteger = va_arg(args, unsigned int);
 	int sumchar = 0, i = 0;
 	char uintToStr[32];
-	unsigned int lastDigit = 0;
 
 	if (uInteger < 2)
 	{
@@ -31,6 +30,6 @@ int printBin(va_list args)
 		_putchar(uintToStr[i - 1]);
 		i--;
 	}
-	
+
 	return (sumchar);
 }
