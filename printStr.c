@@ -11,6 +11,9 @@ int printStr(va_list args)
 	char *string = va_arg(args, char*);
 	int strLen = 0;
 
+	if (string == NULL)
+		string = "(NULL)";
+
 	while (string[strLen] != '\0')
 	{
 		_putchar(string[strLen]);
