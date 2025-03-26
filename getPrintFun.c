@@ -30,14 +30,14 @@ int getPrintFun(char c, va_list args)
 		i++;
 
 	}
-	if (c == '%')
+	if (c != '%')
 	{
-		_putchar('%');
+		_putchar('c');
 		return (1);
 	}
 	else
 	{
-		_putchar(c);
+		_putchar('%');
 		return (1);
 	}
 }
