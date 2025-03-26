@@ -1,0 +1,40 @@
+.TH _PRINTF 3 26/03/2025
+
+.SH NAME
+_printf \- print format
+
+.SH SYNOPSIS
+.PP
+include "main.h"
+
+.SH DESCRIPTION
+.PP
+Produces output according to format.
+
+.SH FORMAT SPECIFIERS
+.RS
+.IP "%d, %i"
+Format specifiers to print integers.
+.IP %c
+Format specifier to print characters.
+.IP %s
+Format specifier to print strings.
+.RE
+
+.SH RETURN VALUE
+.pp
+In case of succes the function returns the count of printed characters. If an error occurs during execution, the function will return a negative value.
+
+.SH FILES
+.RS
+.IP "main.h - Contains declaration for the structures and functions defined in the below files."
+.IP "_printf.c - Contains the definition for _printf function that produces output according to format."
+.IP "getPrintFun.c - Contains calls for the below functions to be used in _printf.c"
+.IP "printInt.c - Prints a given integer."
+.IP "printChar.c - Prints a given character."
+.IP "printStr.c - Prints a given string."
+.IP "_putchar.c - Writes a single character to standard output."
+.RE
+
+.SH AUTHORS
+Ingrid Mornac and Théo DESSAIGNE
