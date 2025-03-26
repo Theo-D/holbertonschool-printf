@@ -15,9 +15,8 @@ int printInt(va_list args)
 
 	if (integer < 0)
 	{
-		_putchar('-');
-		sumChar++;
-		isNeg = -integer;
+		integer *= -1;
+		isNeg = -1;
 	}
 
 	if (integer == 0)
