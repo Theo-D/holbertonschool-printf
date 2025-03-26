@@ -29,8 +29,8 @@ int _printf(const char *format, ...)
 		{
 			_putchar(format[i]);
 			sumChar += 1;
-			i++;
 		}
+			i++;
 	}
 	va_end(args);
 	return (sumChar);
