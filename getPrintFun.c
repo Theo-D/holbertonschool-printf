@@ -15,6 +15,7 @@ int getPrintFun(char c, va_list args)
 		{'i', printInt},
 		{'s', printStr},
 		{'c', printChar},
+		{'b', printBin},
 		{'\0', NULL}
 	};
 	int i = 0;
