@@ -32,7 +32,7 @@ int getPrintFun(char c, va_list args)
 	}
 	if (c != '%')
 	{
-		_putchar('c');
+		_putchar(c);
 		return (1);
 	}
 	else
