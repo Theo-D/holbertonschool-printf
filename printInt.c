@@ -11,12 +11,13 @@ int printInt(va_list args)
 	int integer = va_arg(args, int);
 	char intToStr[11];
 	int sumChar = 0;
-	short isNeg = 0;
+	unsigned short isNeg;
 
 	if (integer < 0)
 	{
-		integer *= -1;
-		isNeg = 1;
+		_putchar('-');
+		surChar++;
+		isNeg = - integer;
 	}
 
 	if (integer == 0)
