@@ -23,6 +23,8 @@ int _printf(const char *format, ...)
 			i++;
 			sumChar += getPrintFun(format[i], args);
 		}
+		else if (format[i] == '%' && format[i + 1] == '\0')
+			return (sumChar += 0);
 		else
 		{
 			_putchar(format[i]);
