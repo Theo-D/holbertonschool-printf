@@ -9,7 +9,10 @@
 int printStr(va_list args)
 {
 	char *string = va_arg(args, char*);
-	int strLen = 0, i = 0;
+	int strLen = 0;
+
+	if (string == NULL)
+		string = "(null)";
 
 	while (string[strLen] != '\0')
 	{
