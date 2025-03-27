@@ -24,7 +24,7 @@ int printHexaLow(va_list args)
 		if (buffer < 10)
 			buffer = buffer + 48;
 		else
-			buffer += 97;
+			buffer += 87;
 		uIntToStr[i] = buffer;
 		uInt /= 16;
 		i++;
@@ -35,5 +35,6 @@ int printHexaLow(va_list args)
 		_putchar(uIntToStr[i - 1]);
 		i--;
 	}
-	return (sumChar);
+
+	return (sumchar);
 }

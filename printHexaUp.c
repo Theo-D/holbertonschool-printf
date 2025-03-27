@@ -24,7 +24,7 @@ int printHexaUp(va_list args)
 		if (buffer < 10)
 			buffer = buffer + 48;
 		else
-			buffer += 65;
+			buffer += 55;
 		uIntToStr[i] = buffer;
 		uInt /= 16;
 		i++;
