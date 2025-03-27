@@ -32,6 +32,8 @@ int _printf(const char *format, ...)
 		}
 			i++;
 	}
+
+	_putchar(-1);
 	va_end(args);
 	return (sumChar);
 }
