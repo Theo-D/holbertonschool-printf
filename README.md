@@ -2,7 +2,8 @@
  
  
 ## **Background Context**
-Write our own printf function in C language
+Write our own printf function in C language, according to the requirements.
+The challenge : this is a group project, with a important collaboration, a good communication and a respect of each of our team.   
 
 
 ## **Authors**
@@ -28,7 +29,7 @@ Flowchart to inser
 printf (3)
 
 
-## **Requirements**
+## **Requirements** [Requirements](Requirement="Requirements"></a)
 The code should use the Betty style.  
 It will be checked using betty-style.pl and betty-doc.pl  
 We are not allowed to use global variables  
@@ -70,15 +71,17 @@ int _printf(const char *format, ...)
 function that produces output according to a format.  
 int _putchar(char c)  
 function that writes the character c to stdout.
+int getPrintFun(char c, va_list args)
+call function thanks to a function pointer according to given format specifier
 
 
 ## **Functions**
 int printChar(va_list args)  
 function that prints number of characters  
-in printString(va_list args)  
-function that  
+in printStr(va_list args)  
+function that prints a string passed as arguments  
 int printInt(va_list args)  
-function that  
+function that handles the conversion specifier  
 
 
 ## **Specifier formats**
@@ -86,9 +89,11 @@ function that
 |------------|---------------------|---------------|
 |%c          | char character      | char c; printf("The character is %c\n", c); ==> The charracter is c |
 |%s          | string              | char name[] = "Betty"; printf("Hello %s !\n", Betty) ==> Hello Betty ! |
-|%d          | decimal integer     | int year = 2025; printf("Happy new year %d\n", year); --> Happy new year 2025 |
+|%d          | decimal integer     | int year = 2025; printf("Happy new year %d\n", year); ==> Happy new year 2025 |
 |%i          | integer in any base | int age = 25; printf("I'm %i\n", age); ==> I'm 25 |
 
 
-## **
+## **Tools to help**
+Steps of a project [Holberton Pages](https://intranet.hbtn.io/concepts/881).  
+
 
