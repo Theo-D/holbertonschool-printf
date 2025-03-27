@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * printOctal - Converts usingned int to base 8 and prints it.
+ * printHexaLow - Converts usingned int to base 16 and prints it.
  * @args: the unsigned int to be converted and printed.
  *
- * Return: the count of printed characters. 
+ * Return: the count of printed characters.
  */
-int printOctal(va_list args)
+int printHexaLow(va_list args)
 {
-	int sumChar = 0, i= 0;
+	int sumChar = 0, i = 0;
 	unsigned int uInt = va_arg(va_list, unsigned int);
 	unsigned int buffer = 0;
 	char uIntToStr[11];
@@ -19,7 +19,7 @@ int printOctal(va_list args)
 			buffer = buffer + 48;
 		else
 			buffer += 97;
-		intToStr[i] = buffer
+		intToStr[i] = buffer;
 		uInt /= 16;
 		i++;
 	}

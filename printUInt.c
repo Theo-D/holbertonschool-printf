@@ -3,11 +3,11 @@
  * printUInt - Prints an unsigned int given as arg.
  * @args: the unsigned int to be printed.
  *
- * Return: the count of printed characters. 
+ * Return: the count of printed characters.
  */
 int printUInt(va_list args)
 {
-	int sumChar = 0, i= 0;
+	int sumChar = 0, i = 0;
 	unsigned int uInt = va_arg(va_list, unsigned int);
 	char uIntToStr[10];
 
@@ -15,7 +15,7 @@ int printUInt(va_list args)
 	{
 		uIntToStr[i] = (uInt % 10) + 48;
 		uInt /= 10;
-		i++
+		i++;
 	}
 	sumChar = i;
 
