@@ -2,9 +2,22 @@
 
 
 ## **Summary**
-* [Authors](#Authors-)  
-* [titre](#name-) 
- 
+* [Authors](#authors)  
+* [Installation](#installation)   
+* [Flowchart](#flowchart)  
+* [Resources](#resources)  
+* [Requirements](#requirements)  
+* [Files](#files)
+* [Compilation](#compilation)
+* [Authorized_functions_and_macros](#authorized_functions_and_macros)  
+* [Prototypes](#prototypes)
+* [Functions](#functions)
+* [Specifier formats](#specifier-formats)
+* [Tools to help](#tools-to-help)  
+  
+--------------------------  
+
+
 ## **Background Context**
 Write our own printf function in C language, according to the requirements.  
 The challenge : this is a group project, with a important collaboration, a good communication and a respect of each of our team.   
@@ -12,7 +25,8 @@ The challenge : this is a group project, with a important collaboration, a good 
 
 ## **Authors**
 This project is done in team :  
-Théo Dessaigne et Ingrid Mornac.
+@Théo Dessaigne  
+@Ingrid Mornac.
 
 
 ## **Installation**
