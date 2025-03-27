@@ -86,8 +86,4 @@ function that
 |     %c     | char character  |
 |     %s     | string          |
 |     %%     | percent         |
-|------------|-----------------|
-
-
-
 
