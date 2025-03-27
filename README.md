@@ -4,7 +4,7 @@
 ## **Background Context**
 Write our own printf function in C language, according to the requirements.  
 The challenge : this is a group project, with a important collaboration, a good communication and a respect of each of our team.   
-![Team Work](https://www.bing.com/rp/zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg)  
+![Team Work](https://www.bing.com/images/search?view=detailV2&ccid=ZXb2jPsH&id=10AE2B63995B58B8D4959F0B85EEF29464EE0EAA&thid=OIP.ZXb2jPsH7H2hTUNQJw9VpAHaF-&mediaurl=https%3a%2f%2fthumbs.dreamstime.com%2fz%2fdeux-concepts-de-personnes-et-de-travail-d-%c3%a9quipe-41478567.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.6576f68cfb07ec7da14d4350270f55a4%3frik%3dqg7uZJTy7oULnw%26pid%3dImgRaw%26r%3d0&exph=1290&expw=1600&q=design+drole+trvail+%c3%a0+2+&simid=608034677178249053&FORM=IRPRST&ck=1AC556B3766319D529CF14FA591471B7&selectedIndex=95&itb=0)  
 
 
 ## **Authors**
@@ -36,7 +36,6 @@ It will be checked using betty-style.pl and betty-doc.pl
 We are not allowed to use global variables  
 No more than 5 functions per file  
 Allowed editors : vi, vim, emacs  
-https://www.bing.com/rp/zYRmeqAEd4Z0yDRz8nuL0syHMEI.svgAll the files should end with a new line  
 The main.c in the project are shown as examples, they can be used to test functions  
 Push the header file  
 All the header files should be include guarded  
@@ -93,7 +92,7 @@ function that handles the conversion specifier
 |%s          | string              | char name[] = "Betty"; printf("Hello %s !\n", Betty) ==> Hello Betty ! |
 |%d          | decimal integer     | int year = 2025; printf("Happy new year %d\n", year); ==> Happy new year 2025 |
 |%i          | integer in any base | int age = 25; printf("I'm %i years old \n", age); ==> I'm 25 years old |  
-Others specifier formats [format specifier in C](https://www.bing.com/images/search?view=detailV2&ccid=k%2bt%2frOsh&id=DB38FDA226ABC0F704EBE53C555EB027A93AE3BD&thid=OIP.k-t_rOsh7LhzS5FU_WicxAHaEK&mediaurl=https%3a%2f%2fcdn.shortpixel.ai%2fclient%2fq_glossy%2cret_img%2cw_1536%2ch_864%2fhttps%3a%2f%2fcodewindow.in%2fwp-content%2fuploads%2f2021%2f03%2fScreenshot-99-1536x864.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.93eb7faceb21ecb8734b9154fd689cc4%3frik%3dveM6qSewXlU85Q%26pid%3dImgRaw%26r%3d0&exph=864&expw=1536&q=tableau+des+sp%c3%a9cifier+format+inc&simid=608015319718960468&FORM=IRPRST&ck=67AB991A421359E6247497FA704FF95D&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0)
+Others [format specifier in C](https://www.bing.com/images/search?view=detailV2&ccid=k%2bt%2frOsh&id=DB38FDA226ABC0F704EBE53C555EB027A93AE3BD&thid=OIP.k-t_rOsh7LhzS5FU_WicxAHaEK&mediaurl=https%3a%2f%2fcdn.shortpixel.ai%2fclient%2fq_glossy%2cret_img%2cw_1536%2ch_864%2fhttps%3a%2f%2fcodewindow.in%2fwp-content%2fuploads%2f2021%2f03%2fScreenshot-99-1536x864.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.93eb7faceb21ecb8734b9154fd689cc4%3frik%3dveM6qSewXlU85Q%26pid%3dImgRaw%26r%3d0&exph=864&expw=1536&q=tableau+des+sp%c3%a9cifier+format+inc&simid=608015319718960468&FORM=IRPRST&ck=67AB991A421359E6247497FA704FF95D&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0)
 
 
 ## **Tools to help**
