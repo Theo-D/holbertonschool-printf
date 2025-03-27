@@ -11,7 +11,12 @@ int printUInt(va_list args)
 	unsigned int uInt = va_arg(args, unsigned int);
 	char uIntToStr[10];
 
-	while (uInt >= 0)
+	if ( uInt == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+	while (uInt > 0)
 	{
 		uIntToStr[i] = (uInt % 10) + 48;
 		uInt /= 10;
