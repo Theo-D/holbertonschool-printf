@@ -20,7 +20,7 @@ int _putchar(char c)
 	if (c == -1 || index >= 1024)
 	{
 		write(1, &buff, index);
-		i = 0;
+		index = 0;
 	}
 	if (c != -1)
 	{
