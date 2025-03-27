@@ -9,7 +9,7 @@
 int _putchar(char c)
 {
 	static char buff[1024];
-	static int index = 0;
+	static int index;
 
 	/*char *pBuff = &buff;
 
