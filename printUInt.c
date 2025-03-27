@@ -11,7 +11,7 @@ int printUInt(va_list args)
 	unsigned int uInt = va_arg(args, unsigned int);
 	char uIntToStr[10];
 
-	while (uInt > 0)
+	while (uInt >= 0)
 	{
 		uIntToStr[i] = (uInt % 10) + 48;
 		uInt /= 10;
@@ -21,7 +21,7 @@ int printUInt(va_list args)
 
 	while (i > 0)
 	{
-		_putchar((int)uIntToStr[i - 1]);
+		_putchar(uIntToStr[i - 1]);
 		i--;
 	}
 
