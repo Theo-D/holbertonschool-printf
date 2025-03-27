@@ -82,22 +82,12 @@ function that
 
 
 ## **Specifier formats**
-:|Specifier f.|   Designation   | Example of use|: 
-:|------------|-----------------|---------------|:
-:|%c          | char character  | char c; printf("The character is %c\n"); ==> The charracter is c |:
-|     %s     | string          |
-|     %i     | integer         |
-|     %d     | integer         |
-
-
-## **Concrete examples of use**
-- printf("Hello the World !\n") --> Hello the World !
-- char c;
-  printf("The character is %c\", c) --> The character is c
-- char name[] = "Betty";
-  printf("Hello %s !\n") --> Hello Betty !
-- int year = 2025;
-  printf("Happy new year %d\n"); --> Happy new year 2025
+|Specifier f.|   Designation       | Example of use| 
+|------------|---------------------|---------------|
+|%c          | char character      | char c; printf("The character is %c\n", c); ==> The charracter is c |
+|%s          | string              | char name[] = "Betty"; printf("Hello %s !\n", Betty) ==> Hello Betty ! |
+|%d          | decimal integer     | int year = 2025; printf("Happy new year %d\n", year); --> Happy new year 2025 |
+|%i          | integer in any base | int age = 25; printf("I'm %i\n", age); ==> I'm 25 |
 
 
 ## **
