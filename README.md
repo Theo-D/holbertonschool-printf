@@ -1,10 +1,13 @@
 # **C - PRINTF - Holbertonschool Toulouse**
- 
+
+
+## **Summary**
+* [Authors](#Authors-)  
+* [titre](#name-) 
  
 ## **Background Context**
 Write our own printf function in C language, according to the requirements.  
 The challenge : this is a group project, with a important collaboration, a good communication and a respect of each of our team.   
-![Team Work](https://www.bing.com/images/search?view=detailV2&ccid=ZXb2jPsH&id=10AE2B63995B58B8D4959F0B85EEF29464EE0EAA&thid=OIP.ZXb2jPsH7H2hTUNQJw9VpAHaF-&mediaurl=https%3a%2f%2fthumbs.dreamstime.com%2fz%2fdeux-concepts-de-personnes-et-de-travail-d-%c3%a9quipe-41478567.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.6576f68cfb07ec7da14d4350270f55a4%3frik%3dqg7uZJTy7oULnw%26pid%3dImgRaw%26r%3d0&exph=1290&expw=1600&q=design+drole+trvail+%c3%a0+2+&simid=608034677178249053&FORM=IRPRST&ck=1AC556B3766319D529CF14FA591471B7&selectedIndex=95&itb=0)  
 
 
 ## **Authors**
@@ -22,15 +25,15 @@ Flowchart to inser
 
 ## **Resources**
 **Read or watch:**
-- Secrets of printf  
-- Group Projects concept page  
-- Flowcharts concept page  
+-[Secrets of printf](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/misc/2022/11/d38f88e96a617135804dca9f9c49632751e06aa7.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20250327%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20250327T110820Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ff189e6b3d46ba37af27234b1a5a403b843a2e93bbdd9571a7744d8dcba8156b)  
+- [Group Projects concept page](https://intranet.hbtn.io/concepts/893)  
+- [Flowcharts concept page](https://intranet.hbtn.io/concepts/895)  
 
 **Man or help:**
 printf (3) [man_3_printf](https://github.com/Theo-D/holbertonschool-printf/blob/main/man_3_printf)  
 
 
-## **Requirements** [Requirements](Requirement="Requirements"></a)
+## **Requirements**
 The code should use the Betty style.  
 It will be checked using betty-style.pl and betty-doc.pl  
 We are not allowed to use global variables  
@@ -97,5 +100,5 @@ Others [format specifier in C](https://www.bing.com/images/search?view=detailV2&
 
 ## **Tools to help**
 Steps of a project [Holberton Pages](https://intranet.hbtn.io/concepts/881).  
-Ascii table [Ascii table](https://computersciencewiki.org/images/3/3d/Ascii_table.png).
-
+Ascii table [Ascii table](https://computersciencewiki.org/images/3/3d/Ascii_table.png).  
+Printf en C - [Wikipedia](https://fr.wikipedia.org/wiki/Printf#C).
