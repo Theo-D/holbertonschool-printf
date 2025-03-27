@@ -8,7 +8,7 @@
 int printUInt(va_list args)
 {
 	int sumChar = 0, i = 0;
-	unsigned int uInt = va_arg(va_list, unsigned int);
+	unsigned int uInt = va_arg(args, unsigned int);
 	char uIntToStr[10];
 
 	while (uInt > 0)
