@@ -12,6 +12,12 @@ int printHexaLow(va_list args)
 	unsigned int buffer = 0;
 	char uIntToStr[11];
 
+	if (uInt == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
 	while (uInt > 0)
 	{
 		buffer = (uInt % 16);
