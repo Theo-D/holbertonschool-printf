@@ -1,8 +1,11 @@
-# **C - printf - Holbertonschool Toulouse**
+# **C - PRINTF - Holbertonschool Toulouse**
  
  
 ## **Background Context**
 Write our own printf function in C language
+
+
+## **Authors**
 This project is done in team :  
 Théo Dessaigne et Ingrid Mornac.
 
@@ -76,14 +79,26 @@ in printString(va_list args)
 function that  
 int printInt(va_list args)  
 function that  
-int printPercent(va_list args)  
-function that
 
 
 ## **Specifier formats**
-|Specifier f.|   Designation   |
-|------------|-----------------|
-|     %c     | char character  |
+:|Specifier f.|   Designation   | Example of use|: 
+:|------------|-----------------|---------------|:
+:|%c          | char character  | char c; printf("The character is %c\n"); ==> The charracter is c |:
 |     %s     | string          |
-|     %%     | percent         |
+|     %i     | integer         |
+|     %d     | integer         |
+
+
+## **Concrete examples of use**
+- printf("Hello the World !\n") --> Hello the World !
+- char c;
+  printf("The character is %c\", c) --> The character is c
+- char name[] = "Betty";
+  printf("Hello %s !\n") --> Hello Betty !
+- int year = 2025;
+  printf("Happy new year %d\n"); --> Happy new year 2025
+
+
+## **
 
