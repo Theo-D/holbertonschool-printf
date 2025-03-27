@@ -36,5 +36,5 @@ int printHexaLow(va_list args)
 		i--;
 	}
 
-	return (sumchar);
+	return (sumChar);
 }
