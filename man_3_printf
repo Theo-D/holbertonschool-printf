@@ -1,10 +1,11 @@
 .TH _PRINTF 3 26/03/2025
 
 .SH NAME
-_printf \- print format
+.B _printf \- Print Format.
 
 .SH SYNOPSIS
 .PP
+.BR _printf
 include "main.h"
 
 .SH DESCRIPTION
@@ -12,13 +13,24 @@ include "main.h"
 Produces output according to format.
 
 .SH FORMAT SPECIFIERS
+       The format string is a character string, beginning and ending in
+       its initial shift state, if any.  The format string is composed of
+       zero or more directives: ordinary characters (not %), which are
+       copied unchanged to the output stream; and conversion
+       specifications, each of which results in fetching zero or more
+       subsequent arguments.  Each conversion specification is introduced
+       by the character %, and ends with a conversion specifier.
 .RS
-.IP "%d, %i"
-Format specifiers to print integers.
-.IP %c
-Format specifier to print characters.
-.IP %s
-Format specifier to print strings.
+.IP "d, i"
+	Format specifiers to print integers.
+.IP c
+	Format specifier to print characters.
+.IP s
+	Format specifier to print strings.
+.IP "o, u, h, H"
+	Format specifiers to convert and prints from base 10 to respectively,
+.br
+	base 8, base 10 unsigned, base 16 lowercade and base 16 uppercase.
 .RE
 
 .SH RETURN VALUE
@@ -33,6 +45,11 @@ In case of succes the function returns the count of printed characters. If an er
 .IP "printInt.c - Prints a given integer."
 .IP "printChar.c - Prints a given character."
 .IP "printStr.c - Prints a given string."
+.IP "printBin.c - Converts a number from base 10 to base 2 and prints it."
+.IP "printOctal.c - Converts a number from base 10 base 8 and prints it."
+.IP "printUInt.c - Converts a number from base 10 base 8 and prints it."
+.IP "printHexaLow.c - Converts a number from base 10 to hexadecimal and prints letter in lowercase."
+.IP "printHexaUp.c - Converts a number from base 10 to hexadecimal and prints letter in uppercase."
 .IP "_putchar.c - Writes a single character to standard output."
 .RE
 
