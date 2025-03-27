@@ -21,7 +21,7 @@ int printUInt(va_list args)
 
 	while (i > 0)
 	{
-		_putchar(uIntToStr[i - 1]);
+		_putchar((int)uIntToStr[i - 1]);
 		i--;
 	}
 
