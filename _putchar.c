@@ -17,7 +17,7 @@ int _putchar(char c)
 	{
 		buff = malloc(1024 * sizeof(char));
 	}*/
-	if (c == -1 || index > 1024)
+	if (c == -1 || index >= 1024)
 	{
 		write(1, &buff, index);
 	}
