@@ -16,6 +16,10 @@ int getPrintFun(char c, va_list args)
 		{'s', printStr},
 		{'c', printChar},
 		{'b', printBin},
+		{'o', printOctal},
+		{'u', printUInt},
+		{'x', printHexaLow},
+		{'X', printHexaUp},
 		{'\0', NULL}
 	};
 	int i = 0;
