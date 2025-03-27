@@ -20,13 +20,13 @@
 
 ## **Background Context**
 Write our own printf function in C language, according to the requirements.  
-The challenge : this is a group project, with a important collaboration, a good communication and a respect of each of our team.   
+The challenge : this is a group project, with a important collaboration, a good communication and the respect of each of our team.   
 
 
 ## **Authors**
 This project is done in team :  
 @Théo Dessaigne  
-@Ingrid Mornac.
+@Ingrid Mornac
 
 
 ## **Installation**
@@ -34,16 +34,16 @@ Create 1 project repository for our team with the main branch and a "dev" branch
 We could have a test folder containing all our tests files uncluding main functons.
 
 
-## *Flowchart**
+## *Flowchart*
 Flowchart to inser
 
 ## **Resources**
-**Read or watch:**
+**Read or watch:**  
 -[Secrets of printf](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/misc/2022/11/d38f88e96a617135804dca9f9c49632751e06aa7.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20250327%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20250327T110820Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ff189e6b3d46ba37af27234b1a5a403b843a2e93bbdd9571a7744d8dcba8156b)  
 - [Group Projects concept page](https://intranet.hbtn.io/concepts/893)  
 - [Flowcharts concept page](https://intranet.hbtn.io/concepts/895)  
 
-**Man or help:**
+**Man or help:**  
 printf (3) [man_3_printf](https://github.com/Theo-D/holbertonschool-printf/blob/main/man_3_printf)  
 
 
@@ -73,13 +73,13 @@ The main files will include the main header file (main.h): #include main.h
 
 
 ## **Authorized functions and macros**
-write (man 2 write)[write man page](https://www.man7.org/linux/man-pages/man2/write.2.html)  
-malloc (man 3 malloc)[malloc man page](https://www.man7.org/linux/man-pages/man3/malloc.3.html)  
-free (man 3 free)[free man page](https://www.man7.org/linux/man-pages/man1/free.1.html)  
-va_start (man 3 va_start)[va_start man page](https://fr.manpages.org/va_start/3)  
-va_end (man 3 va_end)[va_end man page](https://fr.manpages.org/va_end/3)  
-va_copy (man 3 va_copy)[va_copy man page](https://fr.manpages.org/va_copy/3)  
-va_arg (man 3 va_arg)[va_arg man page](https://fr.manpages.org/va_arg/3)
+write (man 2 write)[click to read](https://www.man7.org/linux/man-pages/man2/write.2.html)  
+malloc (man 3 malloc)[click to read](https://www.man7.org/linux/man-pages/man3/malloc.3.html)  
+free (man 3 free)[click to read](https://www.man7.org/linux/man-pages/man1/free.1.html)  
+va_start (man 3 va_start)[click to read](https://fr.manpages.org/va_start/3)  
+va_end (man 3 va_end)[click to read](https://fr.manpages.org/va_end/3)  
+va_copy (man 3 va_copy)[click to read](https://fr.manpages.org/va_copy/3)  
+va_arg (man 3 va_arg)[click to read](https://fr.manpages.org/va_arg/3)
 
 
 ## **Prototypes**
