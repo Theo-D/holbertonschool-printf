@@ -114,16 +114,23 @@ The prototypes of all the functions are included in the header file called main.
 |int printOctal(va_list args) | Converts usingned int from base 10 to base 8 and prints it. |
 |int printUInt(va_list args | Prints an unsigned int passed as args. |
 |int printHexaLow(va_list args) | Converts unsigned int from base 10 to base 16 and prints it lowercase. |
-|int printHexaUp(va_list args) | converts unsigned int from base 10 to base 16 and prints it uppercase. |
+|int printHexaUp(va_list args) | Converts unsigned int from base 10 to base 16 and prints it uppercase. |
+|int printStrPrintable(va_list args) | Prints a given string. If character is printable, prints it. Otherwise prints "\x" followed by hex code of character. |
 
 
 ## **Specifier formats**
 |Format Specifier|   Designation       | Example of use| 
 |------------|---------------------|---------------|
-|c          | char character      | char c; printf("The character is %c\n", c); ==> The charracter is c |
-|s          | string              | char name[] = "Betty"; printf("Hello %s !\n", Betty) ==> Hello Betty ! |
-|d, i       | decimal integer     | int year = 2025; printf("Happy new year %d\n", year); ==> Happy new year 2025 | 
- 
+|c          | character           | char c; _printf("The character is %c\n", c); ==> The charracter is c |
+|s          | string              | char name[] = "Betty"; _printf("Hello %s !\n", Betty) ==> Hello Betty ! |
+|S          | string              | char name[] = "Betty\n"; _printf("Hello %S !\n", Betty) ==> Hello Betty\x0A ! |
+|d, i       | decimal integer     | int year = 2025; _printf("Happy new year %d\n", year); ==> Happy new year 2025 | 
+|b          | unsigned binary     | unsigned int toBinary = 1234; _printf("1234 to binary is: \"%b\"", toBinary) ==> 1234 to binary is "10011010010" |
+|o          | unsigned octal      | unsigned int toOctal = 1234; _printf("1234 to octal is: \"%o\"", toOctal) ==> 1234 to OCtal is "2322"| 
+|u          | unsigned int        | unsigned int toUInt = 1234; _printf("1234 to unsigned int is: \"%u\"", toUInt) ==> 1234 to unsigned int is "1234" | 
+|x          | unsigned hex lower  | unsigned int toHexLow = 1234; _printf("1234 to hexadecimal lowercase is \"%x\"", toHexLow) ==> 1234 to hexadecimal lowercase is "4d2" |  
+|X          | unsigned hex upper  | unsigned int toHexUp = 1234; _printf("1234 to hexadecimal uppercase is \"%X\"", toHexUp) ==> 1234 to hexadecimal uppercase is "4D2" |
+|b          | unsigned binary     | unsigned int toBinary = 1234; _printf("1234 to binary is \"%b\"") ==> 1234 to binary is "10011010010"|  
 Others [format specifier in C](https://www.bing.com/images/search?view=detailV2&ccid=k%2bt%2frOsh&id=DB38FDA226ABC0F704EBE53C555EB027A93AE3BD&thid=OIP.k-t_rOsh7LhzS5FU_WicxAHaEK&mediaurl=https%3a%2f%2fcdn.shortpixel.ai%2fclient%2fq_glossy%2cret_img%2cw_1536%2ch_864%2fhttps%3a%2f%2fcodewindow.in%2fwp-content%2fuploads%2f2021%2f03%2fScreenshot-99-1536x864.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.93eb7faceb21ecb8734b9154fd689cc4%3frik%3dveM6qSewXlU85Q%26pid%3dImgRaw%26r%3d0&exph=864&expw=1536&q=tableau+des+sp%c3%a9cifier+format+inc&simid=608015319718960468&FORM=IRPRST&ck=67AB991A421359E6247497FA704FF95D&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0)
 
 
