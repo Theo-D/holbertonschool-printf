@@ -30,8 +30,8 @@ This project is done in team :
 
 
 ## **Installation**
-Create 1 project repository for our team with the main branch and a "dev" branch on our Github  
-We could have a test folder containing all our tests files uncluding main functons.
+We created a git repository for our team's project for which we both created a "dev" branch, for developing and testing. 
+We created a test folder in each of our branches to test code within main.c file.
 
 
 ## **Flowchart**
@@ -62,14 +62,12 @@ All the header files should be include guarded
 
 
 ## **Files**
-- main.h    
-Contains declaration for all the functions in this repo.*  
+- main.h
 - _printf.c    
-Contains the definition for _printf() that print string to standard output according to format.*
-- README.md  
+- README.md
+- man_3_printf
 - _putchar.c  
 - getPrintFun.c  
-- man_3_printf  
 - printBin.c  
 - printChar.c  
 - printHexaLow.c  
@@ -85,7 +83,7 @@ Contains the definition for _printf() that print string to standard output accor
 All the files will be compiled on Ubuntu 20.04 LTS  
 The code will be compiled this way:  
 $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c  
-The main files will include the main header file (main.h): #include main.h  
+Each file should include the main header file (main.h): #include main.h  
 
 
 ## **Authorized functions and macros**
@@ -105,27 +103,27 @@ The prototypes of all the functions are included in the header file called main.
 ## **Functions**
 |Function | Description |
 |---------|-------------|
-|int _putchar(char c) | changes variable name from i to index |
-|int _printf(const char *format, ...) | prints data passed as args according to format by calling |
-|int printStrPrintable(va_list args) | prints a string passed as args |
-|int printChar(va_list args) | prints number of characters |
-|int printStr(va_list args) | prints a string passed as arguments |  
-|int printInt(va_list args) | handles the conversion specifier |
-|int printBin(va_list args) | prints a given usingned int converted to binary |
-|int printOctal(va_list args) | converts usingned int to base 8 and prints it |
-|int printUInt(va_list args | prints an unsigned int given as arg |
-|int printHexaLow(va_list args) | converts usingned int to base 16 and prints it |
-|int printHexaUp(va_list args) | converts usingned int to base 16 and prints it uppercase |
-|int getPrintFun(char c, va_list args) | call functions thanks to a function pointer according to given format specifier |
+|int _putchar(char c) | Writes char to std out. |
+|int _printf(const char *format, ...) | Prints data passed as args according to format by calling getPrintFun().|
+|int getPrintFun(char c, va_list args) | Calls function through a function pointer according to given format specifier. |
+|int printStrPrintable(va_list args) | Prints a string passed as args. |
+|int printChar(va_list args) | Prints character passed as args. |
+|int printStr(va_list args) | Prints a string passed as args. |  
+|int printInt(va_list args) | Converts int to string and prints it. |
+|int printBin(va_list args) | Convert a given unsigned int from base 10 to base 2 and prints it. |
+|int printOctal(va_list args) | Converts usingned int from base 10 to base 8 and prints it. |
+|int printUInt(va_list args | Prints an unsigned int passed as args. |
+|int printHexaLow(va_list args) | Converts unsigned int from base 10 to base 16 and prints it lowercase. |
+|int printHexaUp(va_list args) | converts unsigned int from base 10 to base 16 and prints it uppercase. |
 
 
 ## **Specifier formats**
-|Specifier f.|   Designation       | Example of use| 
+|Format Specifier|   Designation       | Example of use| 
 |------------|---------------------|---------------|
-|%c          | char character      | char c; printf("The character is %c\n", c); ==> The charracter is c |
-|%s          | string              | char name[] = "Betty"; printf("Hello %s !\n", Betty) ==> Hello Betty ! |
-|%d          | decimal integer     | int year = 2025; printf("Happy new year %d\n", year); ==> Happy new year 2025 |
-|%i          | integer in any base | int age = 25; printf("I'm %i years old \n", age); ==> I'm 25 years old |  
+|c          | char character      | char c; printf("The character is %c\n", c); ==> The charracter is c |
+|s          | string              | char name[] = "Betty"; printf("Hello %s !\n", Betty) ==> Hello Betty ! |
+|d, i       | decimal integer     | int year = 2025; printf("Happy new year %d\n", year); ==> Happy new year 2025 | 
+ 
 Others [format specifier in C](https://www.bing.com/images/search?view=detailV2&ccid=k%2bt%2frOsh&id=DB38FDA226ABC0F704EBE53C555EB027A93AE3BD&thid=OIP.k-t_rOsh7LhzS5FU_WicxAHaEK&mediaurl=https%3a%2f%2fcdn.shortpixel.ai%2fclient%2fq_glossy%2cret_img%2cw_1536%2ch_864%2fhttps%3a%2f%2fcodewindow.in%2fwp-content%2fuploads%2f2021%2f03%2fScreenshot-99-1536x864.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.93eb7faceb21ecb8734b9154fd689cc4%3frik%3dveM6qSewXlU85Q%26pid%3dImgRaw%26r%3d0&exph=864&expw=1536&q=tableau+des+sp%c3%a9cifier+format+inc&simid=608015319718960468&FORM=IRPRST&ck=67AB991A421359E6247497FA704FF95D&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0)
 
 
