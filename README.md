@@ -35,7 +35,8 @@ We could have a test folder containing all our tests files uncluding main functo
 
 
 ## *Flowchart*
-Flowchart to inser
+```[Flowchart of the printf](https://github.com/Theo-D/holbertonschool-printf/blob/devIngrid/Image/Flowchart%20Printf.drawio.png)
+
 
 ## **Resources**
 **Read or watch:**  
