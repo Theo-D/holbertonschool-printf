@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * printStrPrintable - Prints a string passed as args. If characters are
  * printable, prints them, otherwise prints '\x'.
@@ -17,19 +16,27 @@ int printStrPrintable(va_list args)
 
 	while (string[strLen] != '\0')
 	{
-		if (string[strLen] >= 32 || string[strLen] < 127)
+		if (string[strLen] >= 32 && string[strLen] < 127)
 		{
 			_putchar(string[strLen]);
 			strLen++;
 		}
 		else
 		{
-			strLen += getHexa(string[strLen]);
+			_putchar('\\');
+			_putchar('x');
+			strLen += getHexa(string[strLen]) + 2;
+			strLen++;
 		}
 	}
 	return (strLen);
 }
-
+/**
+ * getHexa - Converts passed integer to hexadecimal uppercase and prints it.
+ * @c: the integer to be converted to hexadecimal and printed.
+ *
+ * Return: Count of printed arguments
+ */
 int getHexa(int c)
 {
 	int sumChar = 0, i = 0, buffer = 0;
@@ -37,14 +44,25 @@ int getHexa(int c)
 
 	while (c > 0)
 	{
-		buffer = c % 16;
+		buffer = (c % 16);
 		if (buffer < 10)
+		{
 			buffer += 48;
+			intToHexa[i] = buffer;
+			i++;
+		}
 		else
+		{
 			buffer += 55;
-		intToHexa[i] = buffer;
+			intToHexa[i] = buffer;
+			i++;
+		}
 		c /= 16;
-		i++;
+		if (c == 0)
+		{
+			_putchar('0');
+			sumChar += 1;
+		}
 	}
 	sumChar = i;
 	while (i > 0)
