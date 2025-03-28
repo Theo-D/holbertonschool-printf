@@ -53,5 +53,5 @@ int getHexa(int c)
 		i--;
 	}
 
-	return (sumchar);
+	return (sumChar);
 }
