@@ -62,7 +62,7 @@ int getHexa(int c)
 		if (c == 0)
 		{
 			_putchar('0');
-			sumChar += 1;
+			i += 1;
 		}
 	}
 	sumChar = i;
