@@ -59,7 +59,7 @@ int getHexa(int c)
 			i++;
 		}
 		c /= 16;
-		if (c == 0)
+		if (c == 0 && i < 2)
 		{
 			_putchar('0');
 			i += 1;
