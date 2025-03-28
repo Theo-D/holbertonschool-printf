@@ -23,7 +23,7 @@ Write our own printf function in C language, according to the requirements.
 The challenge : this is a group project, with a important collaboration, a good communication and the respect of each of our team.   
 
 
-## **Authors**
+# **Authors**
 This project is done in team :  
 @Théo Dessaigne  
 @Ingrid Mornac
@@ -35,17 +35,19 @@ We could have a test folder containing all our tests files uncluding main functo
 
 
 ## *Flowchart*
-![Flowchart of the printf](https://github.com/Theo-D/holbertonschool-printf/blob/devIngrid/Image/Flowchart%20Printf.drawio.png)
+![Flowchart of the printf](https://github.com/Theo-D/holbertonschool-printf/blob/main/Image/Flowchart%20Printf.drawio%20(1).png)
 
 
 ## **Resources**
 **Read or watch:**  
-- [Secrets of printf](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/misc/2022/11/d38f88e96a617135804dca9f9c49632751e06aa7.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20250327%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20250327T110820Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ff189e6b3d46ba37af27234b1a5a403b843a2e93bbdd9571a7744d8dcba8156b)  
-- [Group Projects concept page](https://intranet.hbtn.io/concepts/893)  
-- [Flowcharts concept page](https://intranet.hbtn.io/concepts/895)  
+- [Secrets of printf](https://github.com/Theo-D/holbertonschool-printf/blob/main/Image/Secrets%20of%20printf.pdf)  
+- [Group Projects concept page](https://github.com/Theo-D/holbertonschool-printf/blob/main/Image/Group%20project.pdf)  
+- [Flowcharts concept page](https://github.com/Theo-D/holbertonschool-printf/blob/main/Image/Flowcharts%20concept%20page.pdf)  
+
 
 **Man or help:**  
-printf (3) [man_3_printf](https://github.com/Theo-D/holbertonschool-printf/blob/main/man_3_printf)  
+printf (3)
+ ![man_3_printf](https://github.com/Theo-D/holbertonschool-printf/blob/main/man_3_printf)  
 
 
 ## **Requirements**
@@ -56,14 +58,28 @@ No more than 5 functions per file
 Allowed editors : vi, vim, emacs  
 The main.c in the project are shown as examples, they can be used to test functions  
 Push the header file  
-All the header files should be include guarded  
+All the header files should be include guarded
+[Requirements Holberton](https://github.com/Theo-D/holbertonschool-printf/blob/main/Image/Requirements_printf.pdf)  
 
 
 ## **Files**
-*main.h -  
+*main.h    
 Contains declaration for all the functions in this repo.*  
-*_printf.c -  
+*_printf.c    
 Contains the definition for _printf() that print string to standard output according to format.*
+*README.md  
+*_putchar.c  
+*getPrintFun.c  
+*man_3_printf  
+*printBin.c  
+*printChar.c  
+*printHexaLow.c  
+*printHexaUp.c  
+*printInt.c  
+*printOctal.c  
+*printStr.c  
+*printStrPrintable.c  
+*printUInt.c  
 
 
 ## **Compilation**
@@ -84,24 +100,24 @@ The main files will include the main header file (main.h): #include main.h
 
 
 ## **Prototypes**
-The prototypes of all the functions should be included in the header file called main.h.  
-int _printf(const char *format, ...)  
-function that produces output according to a format.  
-int _putchar(char c)  
-function that writes the character c to stdout.
-int getPrintFun(char c, va_list args)
-call function thanks to a function pointer according to given format specifier
+The prototypes of all the functions are included in the header file called main.h.  
 
 
 ## **Functions**
 |Function | Description |
-|int printChar(va_list args) | function that prints number of characters |
-|int printStr(va_list args) | function that prints a string passed as arguments |  
-|int printInt(va_list args) | function that handles the conversion specifier |  
-  
-**Advanced functions**  
-|Function | Description |
-|
+|---------|-------------|
+|int _putchar(char c) | changes variable name from i to index |
+|int _printf(const char *format, ...) | prints data passed as args according to format by calling |
+|int printStrPrintable(va_list args) | prints a string passed as args |
+|int printChar(va_list args) | prints number of characters |
+|int printStr(va_list args) | prints a string passed as arguments |  
+|int printInt(va_list args) | handles the conversion specifier |
+|int printBin(va_list args) | prints a given usingned int converted to binary |
+|int printOctal(va_list args) | converts usingned int to base 8 and prints it |
+|int printUInt(va_list args | prints an unsigned int given as arg |
+|int printHexaLow(va_list args) | converts usingned int to base 16 and prints it |
+|int printHexaUp(va_list args) converts usingned int to base 16 and prints it uppercase |
+|int getPrintFun(char c, va_list args) | call functions thanks to a function pointer according to given format specifier |
 
 
 ## **Specifier formats**
