@@ -18,6 +18,7 @@ int printUInt(va_list args);
 int printHexaLow(va_list args);
 int printHexaUp(va_list args);
 int getPrintFun(char c, va_list args);
+int getHexa(int c);
 /**
  * struct printForm - Structure that contains format specifier and functions
  * to print data.

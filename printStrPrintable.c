@@ -24,10 +24,34 @@ int printStrPrintable(va_list args)
 		}
 		else
 		{
-			_putchar('\\');
-			_putchar('x');
-			strLen += 2;
+			strLen += getHexa(string[strLen]);
 		}
 	}
 	return (strLen);
+}
+
+int getHexa(int c)
+{
+	int sumChar = 0, i = 0, buffer = 0;
+	char intToHexa[2];
+
+	while (c > 0)
+	{
+		buffer = c % 16;
+		if (buffer < 10)
+			buffer += 48;
+		else
+			buffer += 55;
+		intToHexa[i] = buffer;
+		c /= 16;
+		i++;
+	}
+	sumChar = i;
+	while (i > 0)
+	{
+		_putchar(intToHexa[i - 1]);
+		i--;
+	}
+
+	return (sumchar);
 }
