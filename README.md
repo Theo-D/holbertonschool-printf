@@ -129,12 +129,44 @@ The prototypes of all the functions are included in the header file called main.
 |o          | unsigned octal      | unsigned int toOctal = 1234; _printf("1234 to octal is: \"%o\"", toOctal) ==> 1234 to OCtal is "2322"| 
 |u          | unsigned int        | unsigned int toUInt = 1234; _printf("1234 to unsigned int is: \"%u\"", toUInt) ==> 1234 to unsigned int is "1234" | 
 |x          | unsigned hex lower  | unsigned int toHexLow = 1234; _printf("1234 to hexadecimal lowercase is \"%x\"", toHexLow) ==> 1234 to hexadecimal lowercase is "4d2" |  
-|X          | unsigned hex upper  | unsigned int toHexUp = 1234; _printf("1234 to hexadecimal uppercase is \"%X\"", toHexUp) ==> 1234 to hexadecimal uppercase is "4D2" |
-|b          | unsigned binary     | unsigned int toBinary = 1234; _printf("1234 to binary is \"%b\"") ==> 1234 to binary is "10011010010"|  
+|X          | unsigned hex upper  | unsigned int toHexUp = 1234; _printf("1234 to hexadecimal uppercase is \"%X\"", toHexUp) ==> 1234 to hexadecimal uppercase is "4D2" | 
 Others [format specifier in C](https://www.bing.com/images/search?view=detailV2&ccid=k%2bt%2frOsh&id=DB38FDA226ABC0F704EBE53C555EB027A93AE3BD&thid=OIP.k-t_rOsh7LhzS5FU_WicxAHaEK&mediaurl=https%3a%2f%2fcdn.shortpixel.ai%2fclient%2fq_glossy%2cret_img%2cw_1536%2ch_864%2fhttps%3a%2f%2fcodewindow.in%2fwp-content%2fuploads%2f2021%2f03%2fScreenshot-99-1536x864.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.93eb7faceb21ecb8734b9154fd689cc4%3frik%3dveM6qSewXlU85Q%26pid%3dImgRaw%26r%3d0&exph=864&expw=1536&q=tableau+des+sp%c3%a9cifier+format+inc&simid=608015319718960468&FORM=IRPRST&ck=67AB991A421359E6247497FA704FF95D&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0)
 
 
-## **Example**
+## **Example of code**
+
+```c
+#include "main.h"
+
+int main()
+{
+        int count = 0;
+        count += _printf("This is a character: \"%c\"\n", 'c');
+        count += _printf("This is a string: \"%s\"\n", "Hello, I am string");
+        count += _printf("This is a string terminated by a newline: \"%S\"\n", "I am, indeed, terminated by a new line \n");
+        count += _printf("This is an integer: \"%d\", and a second one: \"%i\"\n", 1234, 3421);
+        count += _printf("1234 converted to unsigned binary is: \"%b\"\n", 1234);
+        count += _printf("1234 converted to unsigned octal is: \"%o\"\n", 1234);
+        count += _printf("1234 converted to unsigned int is: \"%u\"\n", 1234);
+        count += _printf("1234 converted to unsigned hexadecimal to lowercase is: \"%x\"\n", 1234);
+        count += _printf("1234 converted to unsigned hexadecimal to uppercase is: \"%X\"\n", 1234);
+        count += _printf("In the end, %d characters were printed in this function.\n", count);
+        return (0);
+}
+```
+
+```
+This is a character: "c"
+This is a string: "Hello, I am string"
+This is a string terminated by a newline: "I am, indeed, terminated by a new line \x0A"
+This is an integer: "1234", and a second one: "3421"
+1234 converted to unsigned binary is: "10011010010"
+1234 converted to unsigned octal is: "2322"
+1234 converted to unsigned int is: "1234"
+1234 converted to unsigned hexadecimal to lowercase is: "4d2"
+1234 converted to unsigned hexadecimal to uppercase is: "4D2"
+In the end, 467 characters were printed in this function.
+```
 
 
 ## **Tools to help**
