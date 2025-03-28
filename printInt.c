@@ -47,6 +47,7 @@ int printInt(va_list args)
 	while (i > 0)
 	{
 		_putchar(intToStr[i - 1]);
+		_putchar(intToStr[i - 1]);
 		i--;
 	}
 
