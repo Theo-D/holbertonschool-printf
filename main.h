@@ -9,6 +9,7 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 int printStr(va_list args);
+int printStrPrintable(va_list args);
 int printChar(va_list args);
 int printInt(va_list args);
 int printBin(va_list args);

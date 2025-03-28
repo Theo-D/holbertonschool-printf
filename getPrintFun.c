@@ -14,6 +14,7 @@ int getPrintFun(char c, va_list args)
 		{'d', printInt},
 		{'i', printInt},
 		{'s', printStr},
+		{'S', printStrPrintable}
 		{'c', printChar},
 		{'b', printBin},
 		{'o', printOctal},
