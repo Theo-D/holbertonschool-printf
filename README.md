@@ -34,7 +34,7 @@ Create 1 project repository for our team with the main branch and a "dev" branch
 We could have a test folder containing all our tests files uncluding main functons.
 
 
-## *Flowchart*
+## **Flowchart**
 ![Flowchart of the printf](https://github.com/Theo-D/holbertonschool-printf/blob/main/Image/Flowchart%20Printf.drawio%20(1).png)
 
 
@@ -46,8 +46,7 @@ We could have a test folder containing all our tests files uncluding main functo
 
 
 **Man or help:**  
-printf (3)
- ![man_3_printf](https://github.com/Theo-D/holbertonschool-printf/blob/main/man_3_printf)  
+printf (3) ![man_3_printf](https://github.com/Theo-D/holbertonschool-printf/blob/main/man_3_printf)  
 
 
 ## **Requirements**
@@ -58,28 +57,28 @@ No more than 5 functions per file
 Allowed editors : vi, vim, emacs  
 The main.c in the project are shown as examples, they can be used to test functions  
 Push the header file  
-All the header files should be include guarded
+All the header files should be include guarded  
 [Requirements Holberton](https://github.com/Theo-D/holbertonschool-printf/blob/main/Image/Requirements_printf.pdf)  
 
 
 ## **Files**
-*main.h    
+- main.h    
 Contains declaration for all the functions in this repo.*  
-*_printf.c    
+- _printf.c    
 Contains the definition for _printf() that print string to standard output according to format.*
-*README.md  
-*_putchar.c  
-*getPrintFun.c  
-*man_3_printf  
-*printBin.c  
-*printChar.c  
-*printHexaLow.c  
-*printHexaUp.c  
-*printInt.c  
-*printOctal.c  
-*printStr.c  
-*printStrPrintable.c  
-*printUInt.c  
+- README.md  
+- _putchar.c  
+- getPrintFun.c  
+- man_3_printf  
+- printBin.c  
+- printChar.c  
+- printHexaLow.c  
+- printHexaUp.c  
+- printInt.c  
+- printOctal.c  
+- printStr.c  
+- printStrPrintable.c  
+- printUInt.c  
 
 
 ## **Compilation**
@@ -116,7 +115,7 @@ The prototypes of all the functions are included in the header file called main.
 |int printOctal(va_list args) | converts usingned int to base 8 and prints it |
 |int printUInt(va_list args | prints an unsigned int given as arg |
 |int printHexaLow(va_list args) | converts usingned int to base 16 and prints it |
-|int printHexaUp(va_list args) converts usingned int to base 16 and prints it uppercase |
+|int printHexaUp(va_list args) | converts usingned int to base 16 and prints it uppercase |
 |int getPrintFun(char c, va_list args) | call functions thanks to a function pointer according to given format specifier |
 
 
@@ -134,6 +133,6 @@ Others [format specifier in C](https://www.bing.com/images/search?view=detailV2&
 
 
 ## **Tools to help**
-Steps of a project [Holberton Pages](https://intranet.hbtn.io/concepts/881).  
+Steps of a project [Holberton Pages](https://github.com/Theo-D/holbertonschool-printf/blob/main/Image/Approching%20project.pdf).  
 Ascii table [Ascii table](https://computersciencewiki.org/images/3/3d/Ascii_table.png).  
 Printf en C - [Wikipedia](https://fr.wikipedia.org/wiki/Printf#C).
