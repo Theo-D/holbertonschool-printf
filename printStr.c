@@ -16,7 +16,7 @@ int printStr(va_list args)
 
 	while (string[strLen] != '\0')
 	{
-		if(string[strLen] >= 32 || string[strLen] <= 127)
+		if(string[strLen] >= 32 || string[strLen] < 127)
 		{	
 			_putchar(string[strLen]);
 			strLen++;
