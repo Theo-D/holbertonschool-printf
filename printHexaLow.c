@@ -30,12 +30,12 @@ int printHexaLow(va_list args)
 		}
 		uInt /= 16;
 	}
+	sumChar = i;
 	if (uInt == 0 && i < 2)
 	{
 		_putchar('0');
-		i += 1;
+		sumChar += 1;
 	}
-	sumChar = i;
 	while (i > 0)
 	{
 		_putchar(uIntToStr[i - 1]);
