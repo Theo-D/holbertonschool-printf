@@ -27,10 +27,16 @@ Produces output according to format.
 	Format specifier to print characters.
 .IP s
 	Format specifier to print strings.
-.IP "o, u, h, H"
-	Format specifiers to convert and prints from base 10 to respectively,
+.IP S
+	Format specifier to print a string. If characters are not printable,
+.br 
+	prints "\x" followed by hex code of said character.
+.IP "o, u, x, X"
+	Format specifiers to convert and print from base 10 to respectively,
 .br
 	base 8, base 10 unsigned, base 16 lowercade and base 16 uppercase.
+.IP b
+        Format specifier to convert an unsigned int to binary and print it.
 .RE
 
 .SH RETURN VALUE
@@ -50,6 +56,7 @@ In case of succes the function returns the count of printed characters. If an er
 .IP "printUInt.c - Converts a number from base 10 base 8 and prints it."
 .IP "printHexaLow.c - Converts a number from base 10 to hexadecimal and prints letter in lowercase."
 .IP "printHexaUp.c - Converts a number from base 10 to hexadecimal and prints letter in uppercase."
+.IP "printStrPrintable.c - Prints a string; if characters are not printable, print \[rs]x followed by hex code of said character."
 .IP "_putchar.c - Writes a single character to standard output."
 .RE
 
