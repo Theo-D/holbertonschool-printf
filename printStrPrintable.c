@@ -9,7 +9,7 @@
 int printStrPrintable(va_list args)
 {
 	char *string = va_arg(args, char*);
-	int strLen = 0;
+	int strLen = 0, sumChar = 0;
 
 	if (string == NULL)
 		string = "(null)";
@@ -20,16 +20,17 @@ int printStrPrintable(va_list args)
 		{
 			_putchar(string[strLen]);
 			strLen++;
+			sumChar++;
 		}
 		else
 		{
 			_putchar('\\');
 			_putchar('x');
-			strLen += getHexa(string[strLen]) + 2;
+			sumChar += getHexa(string[strLen]) + 2;
 			strLen++;
 		}
 	}
-	return (strLen);
+	return (sumChar);
 }
 /**
  * getHexa - Converts passed integer to hexadecimal uppercase and prints it.
